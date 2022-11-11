@@ -2,6 +2,8 @@
 
 *영어 또는 한국어로 구분한 테이블* <br>
 *Team member name : Namgoong Beom, Odonkhuu Zolboo*
+![alt text](https://github.com/tombeom/magugan/blob/main/TeamMemberProfile.png)
+
 
 | 팀 명 / Team name    | 팀 마구간 |Team Magugan     |
 | :---        |    :----:   |          ---: |
