@@ -1,10 +1,10 @@
 # Capstone Design
 
-*영어 또는 한국어로 구분한 테이블* <br>
+
 *Team member name : Namgoong Beom, Odonkhuu Zolboo*
 ![alt text](https://github.com/tombeom/magugan/blob/main/TeamMemberProfile.png)
 
-
+*영어 또는 한국어로 구분한 테이블* <br>
 | 팀 명 / Team name    | 팀 마구간 |Team Magugan     |
 | :---        |    :----:   |          ---: |
 | 프로젝트 / Project | 영상처리를 이용한 주차장 정보 시스템       | Parking Lot Vacant Slot Information System Using Image Processing |
