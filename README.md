@@ -1,7 +1,5 @@
 # Capstone Design
 
-
-*Team member name : Namgoong Beom, Odonkhuu Zolboo*
 ![alt text](https://github.com/tombeom/magugan/blob/main/TeamMemberProfile.png)
 
 *영어 또는 한국어로 구분한 테이블* <br>
