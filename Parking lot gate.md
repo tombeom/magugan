@@ -13,7 +13,7 @@
 ![image](https://user-images.githubusercontent.com/68363309/202603874-5b5dfd95-d282-4b13-8639-6ef23eed9dc9.png)
 
 
-#### ▦ 2 After object [Car] passed through gate, it will trigger the second ultrasonic sensor, triggers the servo motor and closes the gate
+#### ▦ 2 After object [Car] passed through the gate, it will trigger the second ultrasonic sensor -> triggers the servo motor and closes the gate
 
 ![image](https://user-images.githubusercontent.com/68363309/202604809-bc218953-53c7-4c88-b000-72be3a29d2f1.png)
 
