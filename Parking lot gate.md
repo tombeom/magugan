@@ -8,7 +8,7 @@
 
 ### How it works step by step : 
 
-#### ▦ 1 When object [Car] is in-front of one of the ultrasonic sensor, it detects it and triggers Servo motor and opens the gate
+#### ▦ 1 When object [Car] is in-front of one of the ultrasonic sensors, it detects it and triggers Servo motor and opens the gate
 
 ![image](https://user-images.githubusercontent.com/68363309/202603874-5b5dfd95-d282-4b13-8639-6ef23eed9dc9.png)
 
