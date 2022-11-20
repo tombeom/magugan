@@ -6,7 +6,7 @@
 
 Arduino IDE에 ESP32 보드를 설치하기 위해 다음과 같이 합니다.
 
-1. Arduino IDE  에서 File = > Preferences... 로 갑니다.
+1. Arduino IDE  에서 File = > Preferences... 로 이동합니다.
 
 
 ![image](https://user-images.githubusercontent.com/68363309/202918907-8f328e76-7af5-48e1-9e36-5ed09a0ca782.png)
