@@ -1,37 +1,16 @@
 from bluetooth import*
 import time
-def closeGate():
-     print("\nClosing gate\n")
-     #while True:
-     data = 0;
-     sock.send( (data))
-     sock.send("\n")
-     time.sleep(1)
-def openGate():
-     print("\nOpening gate\n")
-     #while True:
-     data = 90;
-     sock.send(str(data))
-     sock.send("\n")
-     time.sleep(1)
-
-def input_and_send():
-     print("\nType something\n")
+# 여기 rawData에 주차장 full인지 아닌지 데이터를 입력
+rawData = 0
+def send_data():
      while True:
-         data = input()
-         if len(data) == 0: break
-         sock.send(data)
-         sock.send("\n")
+          data = rawData
+          if len(data) == 0: break
+          sock.send(data)
+          sock.send("\n")
 
-def rx_and_echo():
-     sock.send("\nsend anything\n")
-     while True:
-         data = sock.recv(buf_size)
-         if data:
-             print(data.decode('utf-8'))
-             sock.send(data)
 
- #MAC Address of esp32
+#MAC Address of esp32
 addr = "94:B5:55:F8:2F:02"
 uuid = "94f39d29-7d6d-437d-973b-fba39e49d4ee"
 #service_matches = find_service(uuid = uuid, address = addr)
@@ -62,7 +41,6 @@ sock.connect((host, port))
 
 print("connected")
 
-input_and_send()
-#rx_and_echo()
+send_data()
 sock.close()
 print("\n--- bye ---\n")
