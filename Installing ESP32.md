@@ -1,4 +1,4 @@
-# 필수 구성 요소: Arduino IDE가 설치
+# 필수 구성 요소: Arduino IDE 설치
 
 시작하기 전에 컴퓨터에 최신 버전의 Arduino IDE가 설치되어 있는지 확인합니다.
 
