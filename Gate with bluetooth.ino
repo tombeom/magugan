@@ -1,9 +1,10 @@
 #include <ESP32Servo.h>
 #include "BluetoothSerial.h"
+// 만약 블루트스 꺼져있을 경우
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
 #error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
 #endif
-
+// 보드에 서버머터 19핀
 static const int servo1Pin = 19; //printed G19 on the board
 
 Servo servo1;  //Declaring servo motor
@@ -96,7 +97,6 @@ if(CHECK1 != 6){
     flag1=0, 
     flag2=0;
   }
- //Serial.println("Distance1: " + distance1 + "Distance2" + distance2);
  delay(20);
 }
 
