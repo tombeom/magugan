@@ -1,6 +1,4 @@
 
-## Parking Lot Vacant Slot Information System Using Image Processing
-
 <br />
 <div align="center">
   <a href="https://github.com/tombeom/magugan">
