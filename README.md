@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/tombeom/magugan">
-    <img src="images/Logo.png" alt="Logo" width="80" height="80">
+    <img src="images/Logo.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">Magugan</h3>
@@ -51,10 +51,14 @@
 
 Our project is about image processing for a parking lot system which keeps count of the available parking spots. It's done with integrated system made of RaspberryPi algorithm and Arduino. The system recognizes the remaining spots in the parking lot through a camera input that will then be processed by a deep learning image processing algorithm which output is used to monitor the parking lot situation in real time. A live monitoring is shown on a dedicated website which we are in a process of making it. My role is Arduino and Bluetooth communication perform the function of raising and lowering the breaker according to the parking lot situation. The information from the parking lot will be shown on the website through web server.
 
-### Built with
+### Languages
+Python
 
 
-* [![Arduino][Arduino.ino]][https://www.arduino.cc]
+### Tools
+
+
+* ![Arduino][Arduino.ino][https://www.arduino.cc]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
