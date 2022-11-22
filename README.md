@@ -1,7 +1,7 @@
 
 <a name="readme-top"></a>
 
-<p align="https://github.com/tombeom/magugan/blob/main/README(%ED%95%9C%EA%B5%AD%EC%96%B4).md">(<a href="link">한국어 버전으로 가기</a>)</p>
+<p align="right">(<a href="https://github.com/tombeom/magugan/blob/main/README(%ED%95%9C%EA%B5%AD%EC%96%B4).md">한국어 버전으로 가기</a>)</p>
 
 <br />
 <div align="center">
