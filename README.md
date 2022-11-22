@@ -49,17 +49,85 @@
   <img src="https://github.com/tombeom/magugan/blob/main/images/Project%20picture.JPG" width="750" title="hover text">
 </p>
 
-Our project is about image processing for a parking lot system which keeps count of the available parking spots. It's done with integrated system made of RaspberryPi algorithm and Arduino. The system recognizes the remaining spots in the parking lot through a camera input that will then be processed by a deep learning image processing algorithm which output is used to monitor the parking lot situation in real time. A live monitoring is shown on a dedicated website which we are in a process of making it. My role is Arduino and Bluetooth communication perform the function of raising and lowering the breaker according to the parking lot situation. The information from the parking lot will be shown on the website through web server.
+Our project is about image processing for a parking lot system which keeps count of the available parking spots. It's done with integrated system made of RaspberryPi algorithm and Arduino. The system recognizes the remaining spots in the parking lot through a camera input that will then be processed by a deep learning image processing algorithm which output is used to monitor the parking lot situation in real time. A live monitoring is shown on a dedicated website which we are in a process of making it. Arduino and Bluetooth communication perform the function of raising and lowering the breaker according to the parking lot situation. The information from the parking lot will be shown on the website through web server.
 
 ### Languages
-Python
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 
-### Tools
+### Boards
+
+![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
+
+### IDEs
+
+![Thonny](https://img.shields.io/badge/Thonny-Python%20IDE-white?style=for-the-badge&logo=appveyor)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=black)
+
+### Libraries
 
 
-* ![Arduino][Arduino.ino][https://www.arduino.cc]
+[PyBluez](https://github.com/pybluez/pybluez) 
 
+[ESP32](https://github.com/espressif/arduino-esp32)
+  
+  
+  
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Getting Started
+
+1. Install Raspian on RaspberryPi
+2. Installation of ESP32
+
+### Prerequisites: Arduino IDE Installed
+
+Before starting this installation procedure, make sure you have the latest version of the Arduino IDE installed in your computer. If you don’t, uninstall it and install it again. Otherwise, it may not work.
+
+### Installing ESP32 Add-on in Arduino IDE
+
+To install the ESP32 board in your Arduino IDE, follow these next instructions:
+
+1. In your Arduino IDE, go to File> Preferences
+
+<p align="center">
+  <img width="300" height="350" src="https://user-images.githubusercontent.com/68363309/202918907-8f328e76-7af5-48e1-9e36-5ed09a0ca782.png">
+</p>
+
+2. Enter the following into the “Additional Board Manager URLs” field:
+
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+<p align="center">
+  <img width="600" height="350" src="https://user-images.githubusercontent.com/68363309/202918993-0eab9b03-7992-4b63-83b0-48bcffed22fc.png">
+</p>
+
+
+Then, click the “OK” button:
+
+3. Open the Boards Manager. Go to Tools > Board > Boards Manager…
+
+<p align="center">
+  <img width="600" height="350" src="https://user-images.githubusercontent.com/68363309/202919157-9ce134cc-8425-46a6-a056-64358d8fb910.png">
+</p>
+
+
+4. Search for ESP32 and press install button for the “ESP32 by Espressif Systems“:
+
+<p align="center">
+  <img width="600" height="350" src="https://user-images.githubusercontent.com/68363309/202919236-1e321fba-8152-467a-b69f-7e7d37c869cb.png">
+</p>
+
+### ESP32 Wire Connectioin
+
+<p align="center">
+  <img width="600" height="300" src="https://user-images.githubusercontent.com/68363309/203395504-0a5b0542-634d-4bc4-9cae-ebe41f51c8b5.png">
+</p>
+
+<p align="center">(<a href="https://github.com/tombeom/magugan/blob/main/ESP32/Parking%20lot%20gate.md">See more</a>)about how the gate works on ESP32
+
+ 
 
 
