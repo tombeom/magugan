@@ -1,3 +1,6 @@
+
+<a name="readme-top"></a>
+
 <p align="right">(<a href="link">한국어 버전으로 가기</a>)</p>
 
 <br />
@@ -16,6 +19,7 @@
     ·
     <a href="https://github.com/tombeom/magugan/issues">Report Bug</a>
     ·
+    <a href="https://github.com/tombeom/magugan/blob/main/Team%20Intro.md">Team members</a>
   </p>
 </div>
 
@@ -26,14 +30,16 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#boards">Boards</a></li>
+        <li><a href="#ides">IDEs</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites>-arduino-ide-installed">Prerequisites: Arduino IDE Installed</a></li>
+        <li><a href="#installing-esp32-add-on-in-arduino-ide">Installation of ESP32</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -82,7 +88,7 @@ Our project is about image processing for a parking lot system which keeps count
 1. Install Raspian on RaspberryPi
 2. Installation of ESP32
 
-### Prerequisites: Arduino IDE Installed
+### Prerequisites> Arduino IDE Installed
 
 Before starting this installation procedure, make sure you have the latest version of the Arduino IDE installed in your computer. If you don’t, uninstall it and install it again. Otherwise, it may not work.
 
@@ -128,6 +134,13 @@ Then, click the “OK” button:
 
 <p align="center">(<a href="https://github.com/tombeom/magugan/blob/main/ESP32/Parking%20lot%20gate.md">See more</a>)about how the gate works on ESP32
 
- 
+  <!-- CONTACT -->
+## Contact
 
+Tombeom - tombeom@naver.com </br>
+Zolboo - zolboo.oz@gmail.com </p>
+Project Link: [https://github.com/tombeom/magugan)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ 
 
