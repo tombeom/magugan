@@ -15,7 +15,7 @@
     Parking Lot Vacant Slot Information System Using Image Processing
     <br />
     <br />
-    <a href="link">Website</a>
+    <a href="http://tombeom.mynetgear.com:8850/">Website</a>
     ·
     <a href="https://github.com/tombeom/magugan/issues">Report Bug</a>
     ·
