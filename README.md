@@ -1,3 +1,4 @@
+<p align="right">(<a href="link">한국어 버전으로 가기</a>)</p>
 
 <br />
 <div align="center">
