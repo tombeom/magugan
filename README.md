@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/tombeom/magugan">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/Logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Magugan</h3>
@@ -46,5 +46,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[!ss](!https://user-images.githubusercontent.com/68363309/203214535-b1177317-8b49-4d6c-8ef5-6b96e59b4e0a.png)
-
+<p align="center">
+  <img src="https://github.com/tombeom/magugan/blob/main/images/Project%20picture.JPG" width="750" title="hover text">
+</p>
