@@ -227,17 +227,14 @@ sock.close()
 <!-- ##################################### Raspberry Pi OS installation ################################## -->
   
 ## Installation and Preperation of Detecting object
-  
-Firstly we need to install RaspberryPi OS
-  
-For this version we have installed RaspberryPi operating system "Buster"  not "Bullseye"
+    
+For this version we have installed RaspberryPi operating system "Buster"
   
 To install Raspberry PI OS Buster on Raspberry Pi [Click here](https://maker.pro/raspberry-pi/tutorial/how-to-set-up-raspbian-on-raspberry-pi-4)
-in case of Bullseye version [Click here](https://raspberrytips.com/install-raspbian-raspberry-pi/) to install the operating system
   
 ## Displaying RaspberryPi
   
-1. For Rasbian Buster run below code in the Terminal
+1. Run below code in the Terminal
   
 ```console
 $ sudo raspi-config
@@ -246,15 +243,6 @@ $ sudo raspi-config
   
   Display Options - Resolution - DMT Mode 51 
   
-In case you have bullseye, write below code in the Terminal
-  
-```console
-$ sudo -s
-$ echo ‘hdmi_force_hotplug=1’>> /boot/config.txt
-$ echo ‘hdmi_group=2’>> /boot/config.txt
-$ echo ‘hdmi_mode=51’>> /boot/config.txt
-$ vi /boot/config.txt
-```
 3. Input below code in order to install OpenCV
   
 ```console  
@@ -305,12 +293,6 @@ For Camera streaming server we are using mjpg-streamer
 Put below codes in the Terminal in order
 
 ```console  
-$ sudo apt-get install ufw
-$ sudo ufw enable
-$ sudo ufw allow 5900
-$ sudo ufw allow 22
-$ sudo ufw allow 5000
-$ cd Desktop
 $ git clone https://github.com/jacksonliam/mjpg-streamer.git
 $ cd mjpg-streamer
 $ cd mjpg-streamer-experimental
@@ -354,7 +336,7 @@ $ STREAMER_PATH/www"
   <!-- CONTACT -->
 ## Contact
 
-Tombeom - tombeom@naver.com </br>
+tombeom - tombeom@naver.com </br>
 Zolboo - zolboo.oz@gmail.com </p>
 Project Link: [https://github.com/tombeom/magugan)
 
