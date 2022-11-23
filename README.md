@@ -33,21 +33,24 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#ides">IDEs</a></li>
         <li><a href="#languages">Languages</a></li>
         <li><a href="#boards">Boards</a></li>
-        <li><a href="#ides">IDEs</a></li>
+        <li><a href="#deep-learning">Deep learning</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites>-arduino-ide-installed">Prerequisites: Arduino IDE Installed</a></li>
+        <li><a href="#prerequisites">Prerequisites: Arduino IDE Installed</a></li>
         <li><a href="#installing-esp32-add-on-in-arduino-ide">Installation of ESP32</a></li>
+        <li><a href="#raspberry-pi-bluetooth-communication-with-esp32-using-pybluez">Bluetooth communication</a></li>
+        <li><a href="#installation-and-preperation-of-detecting-object">Detecting object</a></li>
+        <li><a href="#displaying-raspberrypi">Displaying RaspberryPi</a></li>
+        <li><a href="#install-camera-streaming-server">Camera Streaming Server</a></li>
       </ul>
     </li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
