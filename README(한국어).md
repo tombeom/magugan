@@ -30,22 +30,21 @@
     <li>
       <a href="#프로젝트">프로젝트</a>
       <ul>
-        <li><a href="#사용한-언어">사용한 언어</a></li>
-        <li><a href="#보드">보드</a></li>
         <li><a href="#ides">IDEs</a></li>
+        <li><a href="#사용한-언어">사용한 언어</a></li>
+        <li><a href="#프레임웨크-또는-라이브러리">프레임웨크 또는 라이브러리</a></li>
+        <li><a href="#보드">보드</a></li>
+        <li><a href="#딥러닝">딥러닝</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">시작하기</a>
+      <a href="#시작하기">시작하기</a>
       <ul>
-        <li><a href="#필수-구성-요소>-arduino-ide-설치">필수 구성 요소</a></li>
-        <li><a href="#arduino-ide에-ESP32-을-설치">Arduino IDE 설치</a></li>
-      </ul>
-    </li>
-    <li><a href="#esp32-선연결">ESP32 선연결</a></li>
-    <li><a href="#license">리전즈</a></li>
-    <li><a href="#contact">연락</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+          <li><a href="#pybluez를-사용한-esp32와의-라즈베리-파이-블루투스-통신">블루투스 통신</a></li>
+          <li><a href="#탐지-개체-설치-및-준비">탐지 개체 설치 및 준비</a></li>
+          <li><a href="#라즈베리-파이-표시">라즈베리 파이 표시</a></li>
+          <li><a href="#카메라-스트리밍-서버-설치">카메라 스트리밍 서버 설치</a></li>
+          <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -62,7 +61,7 @@
   <img src="https://github.com/tombeom/magugan/blob/main/images/web%20screenshot.png" width="623.5" height="280" title="hover text">
 </p>
 <p align="center">
-*Screenshot of real time footage*
+*실시간 화면 캡처*
 </p>
 
 ### IDEs
@@ -75,7 +74,7 @@
   
 </div>
 
-### 사용한 어언어
+### 사용한 언어
 <div align="center">
   
   ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
