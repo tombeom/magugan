@@ -1,0 +1,1 @@
+/usr/bin/cc -g -DDEBUG   -Wl,--enable-new-dtags -rdynamic CMakeFiles/mjpg_streamer.dir/mjpg_streamer.c.o CMakeFiles/mjpg_streamer.dir/utils.c.o  -o mjpg_streamer  -Wl,-rpath,:::::::::::::::::::::::::::: -lpthread -ldl 
