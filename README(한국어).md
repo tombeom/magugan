@@ -164,7 +164,7 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
   <img width="600" height="300" src="https://user-images.githubusercontent.com/68363309/203395504-0a5b0542-634d-4bc4-9cae-ebe41f51c8b5.png">
 </p>
 
-ESP32 게이트 어떻게 동작하는지 <a align="center">(<ahref="https://github.com/tombeom/magugan/blob/main/ESP32/Parking%20lot%20gate.md">보기</a>)
+ESP32 게이트 어떻게 동작하는지<a align="center">(<a href="https://github.com/tombeom/magugan/blob/main/ESP32/Parking%20lot%20gate.md">보기</a>)
 
 <!-- ##################################### Raspberry Pi Bluetooth communication with ESP32 using PYBLUEZ ################################## -->
   
