@@ -78,6 +78,17 @@ Our project is about image processing for a parking lot system which keeps count
   
 </div>
 
+### Frameworks, Platforms and Libraries
+
+<div align="center">
+
+![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+[PyBluez library](https://github.com/pybluez/pybluez) 
+[ESP32 library](https://github.com/espressif/arduino-esp32)
+  
+</div>
+
 ### Boards
 
 <div align="center">
@@ -91,17 +102,6 @@ Our project is about image processing for a parking lot system which keeps count
 <div align="center">
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlowLite-%23FF6F00.svg?style=for-the-badge&logo=TensorFlowLite&logoColor=white)
-  
-</div>
-
-### Frameworks, Platforms and Libraries
-
-<div align="center">
-
-![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-[PyBluez library](https://github.com/pybluez/pybluez) 
-[ESP32 library](https://github.com/espressif/arduino-esp32)
   
 </div>
   
