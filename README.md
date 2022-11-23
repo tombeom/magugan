@@ -55,7 +55,7 @@
   <img src="https://github.com/tombeom/magugan/blob/main/images/Project%20picture.JPG" width="750" title="hover text">
 </p>
 
-Our project is about image processing for a parking lot system which keeps count of the available parking spots. It's done with integrated system made of RaspberryPi algorithm and Arduino. The system recognizes the remaining spots in the parking lot through a camera input that will then be processed by a deep learning image processing algorithm which output is used to monitor the parking lot situation in real time. A live monitoring is shown on a dedicated website which we are in a process of making it. Arduino and Bluetooth communication perform the function of raising and lowering the breaker according to the parking lot situation. The information from the parking lot will be shown on the website through web server.
+Our project is about image processing for a parking lot system which keeps count of the available parking spots. It's done with integrated system made of RaspberryPi algorithm and Arduino board ESP32 . The system recognizes the available spots in the parking lot through a camera input that will then be processed by a deep learning image processing algorithm which output is used to monitor the parking lot situation in real time. A live monitoring is shown on a dedicated website which we made with simple CSS and HTML code. ESP32 and RaspberryPI bluetooth communication performs the function of raising and lowering the breaker (which is build with servo-motor) according to the parking lot situation. The information from the parking lot is shown on the website through web server which built on FLASK. The website displays a real-time footage of the parking lot along with the number of parking slots available. The information is updated every 5 seconds.
 
 ### IDEs
 
@@ -97,7 +97,7 @@ Our project is about image processing for a parking lot system which keeps count
   
 </div>
 
-### Machine learning
+### Deep learning
 
 <div align="center">
 
