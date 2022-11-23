@@ -61,6 +61,13 @@
 
 Our project is about image processing for a parking lot system which keeps count of the available parking spots. It's done with integrated system made of RaspberryPi algorithm and Arduino board ESP32 . The system recognizes the available spots in the parking lot through a camera input that will then be processed by a deep learning image processing algorithm which output is used to monitor the parking lot situation in real time. A live monitoring is shown on a dedicated website which we made with simple CSS and HTML code. ESP32 and RaspberryPI bluetooth communication performs the function of raising and lowering the breaker (which is build with servo-motor) according to the parking lot situation. The information from the parking lot is shown on the website through web server which built on FLASK. The website displays a real-time footage of the parking lot along with the number of parking slots available. The information is updated every 5 seconds.
 
+<p align="center">
+  <img src="https://github.com/tombeom/magugan/blob/main/images/web%20screenshot.png" width="623.5" height="280" title="hover text">
+</p>
+<p align="center">
+*Screenshot of real time footage*
+</p>
+
 <!-- ############################################################# BADGES ################################################################## -->
 
 ### IDEs
