@@ -2,7 +2,9 @@
 <a name="readme-top"></a>
 
 <p align="right">(<a href="https://github.com/tombeom/magugan/blob/main/README(%ED%95%9C%EA%B5%AD%EC%96%B4).md">한국어 버전으로 가기</a>)</p>
-
+                                                                
+                                                                <!-- INTRO -->
+                                                                
 <br />
 <div align="center">
   <a href="https://github.com/tombeom/magugan">
@@ -23,7 +25,8 @@
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
+<!-- ############################################################# TABLE OF CONTENTS ################################################################## -->
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -48,7 +51,8 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
+<!-- ############################################################# ABOUT THE PROJECT ################################################################## -->
+
 ## About The Project
 
 <p align="center">
@@ -56,6 +60,8 @@
 </p>
 
 Our project is about image processing for a parking lot system which keeps count of the available parking spots. It's done with integrated system made of RaspberryPi algorithm and Arduino board ESP32 . The system recognizes the available spots in the parking lot through a camera input that will then be processed by a deep learning image processing algorithm which output is used to monitor the parking lot situation in real time. A live monitoring is shown on a dedicated website which we made with simple CSS and HTML code. ESP32 and RaspberryPI bluetooth communication performs the function of raising and lowering the breaker (which is build with servo-motor) according to the parking lot situation. The information from the parking lot is shown on the website through web server which built on FLASK. The website displays a real-time footage of the parking lot along with the number of parking slots available. The information is updated every 5 seconds.
+
+<!-- ############################################################# BADGES ################################################################## -->
 
 ### IDEs
 
@@ -102,6 +108,8 @@ Our project is about image processing for a parking lot system which keeps count
 <div align="center">
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlowLite-%23FF6F00.svg?style=for-the-badge&logo=TensorFlowLite&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
   
 </div>
   
@@ -109,12 +117,14 @@ Our project is about image processing for a parking lot system which keeps count
 
 ## Getting Started
 
-1. Install Raspian on RaspberryPi
-2. Installation of ESP32
+<!-- ############################################################# Preperation ################################################################## -->
 
-### Prerequisites> Arduino IDE Installed
+### Prerequisites
 
+#### Arduino IDE Installed
 Before starting this installation procedure, make sure you have the latest version of the Arduino IDE installed in your computer. If you don’t, uninstall it and install it again. Otherwise, it may not work.
+
+<!-- ############################################################# Installation of esp32 ################################################################## -->
 
 ### Installing ESP32 Add-on in Arduino IDE
 
@@ -150,6 +160,9 @@ Then, click the “OK” button:
   <img width="600" height="350" src="https://user-images.githubusercontent.com/68363309/202919236-1e321fba-8152-467a-b69f-7e7d37c869cb.png">
 </p>
 
+<!-- ################################################################### WIRE CONNECTION ################################################################## -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### ESP32 Wire Connectioin
 
 <p align="center">
@@ -158,6 +171,186 @@ Then, click the “OK” button:
 
 <p align="center">(<a href="https://github.com/tombeom/magugan/blob/main/ESP32/Parking%20lot%20gate.md">See more</a>)about how the gate works on ESP32
 
+<!-- ##################################### Raspberry Pi Bluetooth communication with ESP32 using PYBLUEZ ################################## -->
+  
+## Raspberry Pi Bluetooth communication with ESP32 using PYBLUEZ 
+     
+1. Install pybluez for Python3, enter the command in Terminal:
+
+```console
+$ sudo pip3 install pybluez
+$ sudo apt install bluetooth bluez libbluetooth-dev
+```
+2. Put below python code in Raspberry Pi Thonny.
+
+```python
+from bluetooth import *
+def sendData():
+    print("\nType something\n")
+    while True:
+        data = input()
+        if len(data) == 0: break
+        sock.send(data)
+        sock.send("\n")           
+#MAC address of ESP32
+addr = "24:0A:C4:E8:0F:9A"
+service_matches = find_service( address = addr )
+
+buf_size = 1024;
+
+if len(service_matches) == 0:
+    print("couldn't find the SampleServer service =(")
+    sys.exit(0)
+
+for s in range(len(service_matches)):
+    print("\nservice_matches: [" + str(s) + "]:")
+    print(service_matches[s])
+    
+first_match = service_matches[0]
+port = first_match["port"]
+name = first_match["name"]
+host = first_match["host"]
+port=1
+print("connecting to \"%s\" on %s, port %s" % (name, host, port))
+
+# Create the client socket
+sock=BluetoothSocket(RFCOMM)
+sock.connect((host, port))
+
+print("connected")
+sendData()
+sock.close()
+```
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ##################################### Raspberry Pi OS installation ################################## -->
+  
+## Installation and Preperation of Detecting object
+  
+Firstly we need to install RaspberryPi OS
+  
+For this version we have installed RaspberryPi operating system "Buster"  not "Bullseye"
+  
+To install Raspberry PI OS Buster on Raspberry Pi [Click here](https://maker.pro/raspberry-pi/tutorial/how-to-set-up-raspbian-on-raspberry-pi-4)
+in case of Bullseye version [Click here](https://raspberrytips.com/install-raspbian-raspberry-pi/) to install the operating system
+  
+## Displaying RaspberryPi
+  
+1. For Rasbian Buster run below code in the Terminal
+  
+```console
+$ sudo raspi-config
+```
+2. Set up the Display by following order
+  
+  Display Options - Resolution - DMT Mode 51 
+  
+In case you have bullseye, write below code in the Terminal
+  
+```console
+$ sudo -s
+$ echo ‘hdmi_force_hotplug=1’>> /boot/config.txt
+$ echo ‘hdmi_group=2’>> /boot/config.txt
+$ echo ‘hdmi_mode=51’>> /boot/config.txt
+$ vi /boot/config.txt
+```
+3. Input below code in order to install OpenCV
+  
+```console  
+$ pip3 install opencv-python==4.5.1.48
+``` 
+4. Input below code in order to install Numpy
+  
+```console  
+$ pip3 install numpy==1.20.2
+``` 
+5. Input below code in order to install the required libraries
+  
+```console  
+$ sudo apt-get install libhdf-dev -y
+$ sudo apt-get install libhdf-serial-dev -y
+$ sudo apt-get install libatlas-base-dev -y
+$ sudo apt-get install libjasper-dev -y
+$ sudo apt-get install libqtgui4 -y
+$ sudo apt-get install libqt4-test -y
+``` 
+6. Input below code in order to install TensorFlow
+  
+```console  
+$ pip3 install tensorflow==1.14.0
+``` 
+7. Input below code in order to install Keras
+  
+```console  
+$ pip3 install keras==2.2.5
+``` 
+* Keras acts as an interface for the TensorFlow library. 
+  
+8. Input below code in order to install h5py
+  
+```console  
+$ pip3 install h5py==2.10.0
+``` 
+* The h5py package is a Pythonic interface to the HDF5 binary data format. 
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+<!-- ##################################### Camera Streaming Server installation ################################## -->
+  
+## Install Camera Streaming Server
+
+For Camera streaming server we are using mjpg-streamer
+  
+Put below codes in the Terminal in order
+
+```console  
+$ sudo apt-get install ufw
+$ sudo ufw enable
+$ sudo ufw allow 5900
+$ sudo ufw allow 22
+$ sudo ufw allow 5000
+$ cd Desktop
+$ git clone https://github.com/jacksonliam/mjpg-streamer.git
+$ cd mjpg-streamer
+$ cd mjpg-streamer-experimental
+$ sudo apt-get install libjpeg-dev
+$ make CMAKE_BUILD_TYPE=Debug
+$ sudo make install
+``` 
+After the installation of mjpg-streamer
+  
+We have to make shell executable file under name of "mjpg"
+   following code will create the file
+
+```console  
+sudo nano mjpg.sh
+```  
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+## Usage
+  
+From the mjpeg streamer folder:
+  
+```
+export STREAMER_PATH=$HOME/mjpg/mjpg-streamer/mjpg-streamer-experimental
+export LD_LIBRARY_PATH=$STREAMER_PATH
+$STREAMER_PATH/mjpg_streamer -i "input_uvc.so" -o "output_http.so -w 
+$STREAMER_PATH/www"
+
+```
+  
+#### ** in case if you use raspberrypi camera instead of webcamera follow below lines **
+  
+```
+export STREAMER_PATH=$HOME/mjpg/mjpg-streamer/mjpg-streamer-experimental
+export LD_LIBRARY_PATH=$STREAMER_PATH
+$ STREAMER_PATH/mjpg_streamer -i "input_raspicam.so" -o "output_http.so -w 
+$ STREAMER_PATH/www"
+
+```  
+  
   <!-- CONTACT -->
 ## Contact
 
