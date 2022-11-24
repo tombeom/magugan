@@ -173,7 +173,7 @@ Then, click the “OK” button:
 <!-- ################################################################### WIRE CONNECTION ################################################################## -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### ESP32 Wire Connectioin
+### ESP32 Wire Connection
 
 <p align="center">
   <img width="600" height="300" src="https://user-images.githubusercontent.com/68363309/203395504-0a5b0542-634d-4bc4-9cae-ebe41f51c8b5.png">
