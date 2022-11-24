@@ -19,7 +19,7 @@
     ·
     <a href="https://github.com/tombeom/magugan/issues">버그 레포트 하기</a>
     ·
-    <a href="https://github.com/tombeom/magugan/blob/main/Team%20Intro.md">팀 원</a>
+    <a href="https://github.com/tombeom/magugan/blob/main/Team%20Intro.md">팀원</a>
   </p>
 </div>
 
@@ -30,22 +30,21 @@
     <li>
       <a href="#프로젝트">프로젝트</a>
       <ul>
-        <li><a href="#사용한-언어">사용한 언어</a></li>
-        <li><a href="#보드">보드</a></li>
         <li><a href="#ides">IDEs</a></li>
+        <li><a href="#사용한-언어">사용한 언어</a></li>
+        <li><a href="#프레임워크와-라이브러리">프레임워크와 라이브러리</a></li>
+        <li><a href="#보드">보드</a></li>
+        <li><a href="#딥러닝">딥러닝</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">시작하기</a>
+      <a href="#시작하기">시작하기</a>
       <ul>
-        <li><a href="#필수-구성-요소>-arduino-ide-설치">필수 구성 요소</a></li>
-        <li><a href="#arduino-ide에-ESP32-을-설치">Arduino IDE 설치</a></li>
-      </ul>
-    </li>
-    <li><a href="#esp32-선연결">ESP32 선연결</a></li>
-    <li><a href="#license">리전즈</a></li>
-    <li><a href="#contact">연락</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+          <li><a href="#pybluez를-사용한-esp32와-라즈베리-파이-블루투스-통신">블루투스 통신를 위한 준비</a></li>
+          <li><a href="#객체-감지를-구현하기-위한-준비">객체 감지를 구현하기 위한 준비</a></li>
+          <li><a href="#카메라-스트리밍-서버-설치">카메라 스트리밍 서버 설치</a></li>
+          <li><a href="#사용법">사용법</a></li>  
+          <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -62,7 +61,7 @@
   <img src="https://github.com/tombeom/magugan/blob/main/images/web%20screenshot.png" width="623.5" height="280" title="hover text">
 </p>
 <p align="center">
-*Screenshot of real time footage*
+*실시간 화면 캡처*
 </p>
 
 ### IDEs
@@ -75,7 +74,7 @@
   
 </div>
 
-### 사용한 어언어
+### 사용한 언어
 <div align="center">
   
   ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
@@ -86,7 +85,7 @@
   
 </div>
 
-### 프레임웨크 또는 라이브러리
+### 프레임워크와 라이브러리
 
 <div align="center">
 
@@ -122,11 +121,11 @@
 
 ### 필수 구성 요소: Arduino IDE 설치
 
-시작하기 전에 컴퓨터에 최신 버전의 Arduino IDE가 설치되어 있는지 확인하
+시작하기 전에 컴퓨터에 최신 버전의 Arduino IDE가 설치되어 있는지 확인하요세요
 
 ### Arduino IDE에 ESP32 을 설치
 
-Arduino IDE에 ESP32 보드를 설치하기 위해 다음과 같이 합니다:
+Arduino IDE에 ESP32 보드를 설치하기 위해 아래 내용을 따라합니다.
 
 1. Arduino IDE 에서 File = > Preferences... 로 이동합니다.
 
@@ -134,7 +133,7 @@ Arduino IDE에 ESP32 보드를 설치하기 위해 다음과 같이 합니다:
   <img width="300" height="350" src="https://user-images.githubusercontent.com/68363309/202918907-8f328e76-7af5-48e1-9e36-5ed09a0ca782.png">
 </p>
 
-2. 아래 주소를 복사해서 입력해줍니다.:
+2. 아래 주소를 복사해서 입력합니다 :
 
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
@@ -143,41 +142,41 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 </p>
 
 
-"OK" 버튼을 클릭합니다:
+"OK" 버튼을 클릭합니다 :
 
-3. Tools => Board => Boads Manager 로 이동합니다
+3. Tools => Board => Boads Manager 로 이동합니다.
 
 <p align="center">
   <img width="600" height="350" src="https://user-images.githubusercontent.com/68363309/202919157-9ce134cc-8425-46a6-a056-64358d8fb910.png">
 </p>
 
 
-4. ESP32 를 입력하고 나온 걸과를 INSTALL 버튼을 클릭하여 설치합니다.
+4. ESP32 를 검색하고 INSTALL 버튼을 클릭하여 설치합니다.
 
 <p align="center">
   <img width="600" height="350" src="https://user-images.githubusercontent.com/68363309/202919236-1e321fba-8152-467a-b69f-7e7d37c869cb.png">
 </p>
 
-### ESP32 선연결
+### ESP32 회로 구성
 
 <p align="center">
   <img width="600" height="300" src="https://user-images.githubusercontent.com/68363309/203395504-0a5b0542-634d-4bc4-9cae-ebe41f51c8b5.png">
 </p>
 
-ESP32 게이트 어떻게 동작하는지<a align="center">(<a href="https://github.com/tombeom/magugan/blob/main/ESP32/Parking%20lot%20gate.md">보기</a>)
+ESP32 주차장 차단기 동작 원리 <a align="center">(<a href="https://github.com/tombeom/magugan/blob/main/ESP32/Parking%20lot%20gate.md">보기</a>)
 
 <!-- ##################################### Raspberry Pi Bluetooth communication with ESP32 using PYBLUEZ ################################## -->
   
-## PYBLUEZ를 사용한 ESP32와의 라즈베리 파이 블루투스 통신
+## PYBLUEZ를 사용한 ESP32와 라즈베리 파이 블루투스 통신
   
-1. Pybluez를 설치하고 터미널에 다음 명령을 입력합니다.
+1. Pybluez를 설치하고 터미널에 다음 명령어를 실행합니다.
 
 ```console
 $ sudo pip3 install pybluez
 $ sudo apt install bluetooth bluez libbluetooth-dev
 ```
 
-2. 라즈베리 파이톤 코드 다음 명령을 입력합니다.
+2. 불루투스 통신을 구현하기 위해 아래의 코드를 입력합니다.
   
 ```python
 from bluetooth import *
@@ -222,34 +221,34 @@ sock.close()
   
 <!-- ##################################### Raspberry Pi OS installation ################################## -->
   
-## 탐지 개체 설치 및 준비
+## 객체 감지를 구현하기 위한 준비
     
-이 버전에는 라즈베리파이 운영체제 "버스터"를 설치합니다.
+RaspberryPi OS "Buster(legacy)"를 설치합니다.
   
-라즈베리 파이에 라즈베리 PI OS 버스터를 설치하려면 [여기 누르세요](https://maker.pro/raspberry-pi/tutorial/how-to-set-up-raspbian-on-raspberry-pi-4)
+RaspberryPi OS "Buster"를 설치하려면 [여기 누르세요](https://maker.pro/raspberry-pi/tutorial/how-to-set-up-raspbian-on-raspberry-pi-4)
   
-## 라즈베리 파이 표시
+## 객체 감지 구현을 위한 라이브러리 설치
   
-1. 터미널의 코드 아래를 실행합니다.
+1. 터미널에 아래 명령어를 실행합니다.
   
 ```console
 $ sudo raspi-config
 ```
-2. 다음 순서에 따라 디스플레이 설정
+2. VNC 연결 시 화면 출력 문제를 해결하기 위해 다음과 같이 설정합니다.
   
   Display Options - Resolution - DMT Mode 51 
   
-3. OpenCV를 설치하기 위한 아래에 코드 입력하십시오
+3. OpenCV를 설치하기 위해 아래 명령어를 실행합니다.
   
 ```console  
 $ pip3 install opencv-python==4.5.1.48
 ``` 
-4. Numpy를 설치하기 위한 아래에 코드 입력하십시오
+4. Numpy를 설치하기 위해 아래 명령어를 실행합니다.
   
 ```console  
 $ pip3 install numpy==1.20.2
 ``` 
-5. 필요란 라이브러리를 설치하기 위한 아래에 코드 입력하십시오
+5. 영상처리를 위한 라이브러리 실행에 필요한 기타 라이브러리를 설치하기 위해 아래 명령어를 실행합니다.
   
 ```console  
 $ sudo apt-get install libhdf-dev -y
@@ -259,24 +258,24 @@ $ sudo apt-get install libjasper-dev -y
 $ sudo apt-get install libqtgui4 -y
 $ sudo apt-get install libqt4-test -y
 ``` 
-6. TensorFlow를 설치하기 위한 아래에 코드 입력하십시오
+6. TensorFlow를 설치하기 위해 아래 명령어를 실행합니다.
   
 ```console  
 $ pip3 install tensorflow==1.14.0
 ``` 
-7. Keras를 설치하기 위한 아래에 코드 입력하십시오
+7. Keras를 설치하기 위해 아래 명령어를 실행합니다.
   
 ```console  
 $ pip3 install keras==2.2.5
 ``` 
-* 케라스는 텐서플로 라이브러리의 인터페이스 역할을 한다.
+* 케라스는 텐서플로우 라이브러리의 인터페이스 역할을 합니다.
   
-8. h5py를 설치하기 위한 아래에 코드 입력하십시오
+8. h5py를 설치하기 위해 아래 명령어를 실행합니다.
   
 ```console  
 $ pip3 install h5py==2.10.0
 ``` 
-* h5py 패키지는 HDF5 바이너리 데이터 포맷에 대한 파이토닉 인터페이스이다.
+* h5py 패키지는 HDF5 바이너리 데이터 포맷에 대한 파이썬 인터페이스입니다.
   
 <p align="right">(<a href="#readme-top">올라가기</a>)</p>
   
@@ -284,9 +283,9 @@ $ pip3 install h5py==2.10.0
   
 ## 카메라 스트리밍 서버 설치
 
-카메라 스트리밍 서버의 경우 mjpg-streamer를 사용하고 있습니다.
+카메라 스트리밍 서버는 mjpg-streamer Command-line Application 를 사용합니다.
   
-터미널에 아래 코드를 순서대로 배치합니다.
+터미널에 아래 명령어를 순서대로 실행합니다.
 
 ```console  
 $ git clone https://github.com/jacksonliam/mjpg-streamer.git
@@ -296,20 +295,21 @@ $ sudo apt-get install libjpeg-dev
 $ make CMAKE_BUILD_TYPE=Debug
 $ sudo make install
 ``` 
-mjpg-streamer 설치 후
+
+<p align="right">(<a href="#readme-top">올라가기</a>)</p>
   
-우리는 "mjpg"라는 이름으로 셸 실행 파일을 만들어야 한다.
-  다음 코드는 파일을 생성합니다.
+## 사용법
+
+mjpg-streamer를 설치하고
+  
+"mjpg" 이름으로 스트리밍 서버를 실행하기 위한 셸 스크립트 파일을 만들어야 합니다.
+  다음 명령어로 nano 에디터를 열어서 파일을 생성합니다.
 
 ```console  
 sudo nano mjpg.sh
 ```  
-
-<p align="right">(<a href="#readme-top">올라가기</a>)</p>
   
-## Usage
-  
-mjpeg 스트리머 폴더에서:
+mjpg.sh에 입력되는 내용은 다음과 같습니다 :
   
 ```
 export STREAMER_PATH=$HOME/mjpg/mjpg-streamer/mjpg-streamer-experimental
@@ -319,7 +319,7 @@ $STREAMER_PATH/www"
 
 ```
   
-#### ** 웹 카메라 대신 라즈베리파이 카메라를 사용하는 경우 아래 줄을 따라 **
+#### ** USB 웹캠 대신 CSI 포트로 라즈베리파이 카메라를 사용할 경우 위의 내용 대신에 아래의 내용을 입력합니다.  **
   
 ```
 export STREAMER_PATH=$HOME/mjpg/mjpg-streamer/mjpg-streamer-experimental
