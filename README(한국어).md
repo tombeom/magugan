@@ -40,10 +40,10 @@
     <li>
       <a href="#시작하기">시작하기</a>
       <ul>
-          <li><a href="#pybluez를-사용한-esp32와의-라즈베리-파이-블루투스-통신">블루투스 통신</a></li>
-          <li><a href="#탐지-개체-설치-및-준비">탐지 개체 설치 및 준비</a></li>
-          <li><a href="#라즈베리-파이-표시">라즈베리 파이 표시</a></li>
+          <li><a href="#pybluez를-사용한-esp32와-라즈베리-파이-블루투스-통신">블루투스 통신를 위한 준비</a></li>
+          <li><a href="#객체-감지를-구현하기-위한-준비">객체 감지를 구현하기 위한 준비</a></li>
           <li><a href="#카메라-스트리밍-서버-설치">카메라 스트리밍 서버 설치</a></li>
+          <li><a href="#사용법">사용법</a></li>  
           <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -221,7 +221,7 @@ sock.close()
   
 <!-- ##################################### Raspberry Pi OS installation ################################## -->
   
-## 객체 감감지를 구현하기 위한 준비
+## 객체 감지를 구현하기 위한 준비
     
 RaspberryPi OS "Buster(legacy)"를 설치합니다.
   
@@ -275,7 +275,7 @@ $ pip3 install keras==2.2.5
 ```console  
 $ pip3 install h5py==2.10.0
 ``` 
-* h5py 패키지는 HDF5 바이너리 데이터 포맷에 대한 파이썬 인터페이다입니다.
+* h5py 패키지는 HDF5 바이너리 데이터 포맷에 대한 파이썬 인터페이스입니다.
   
 <p align="right">(<a href="#readme-top">올라가기</a>)</p>
   
@@ -298,7 +298,7 @@ $ sudo make install
 
 <p align="right">(<a href="#readme-top">올라가기</a>)</p>
   
-## 사용
+## 사용법
 
 mjpg-streamer를 설치하고
   
