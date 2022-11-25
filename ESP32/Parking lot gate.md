@@ -1,6 +1,6 @@
 # Parking lot gate
 
-## Board  : ESP3
+## Board  : ESP32
 ## Sensor : Ultrasonic Sensor
 ## Motor  : Servo motor
 
