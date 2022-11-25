@@ -121,7 +121,7 @@
 
 ### 필수 구성 요소: Arduino IDE 설치
 
-시작하기 전에 컴퓨터에 최신 버전의 Arduino IDE가 설치되어 있는지 확인하요세요
+시작하기 전에 컴퓨터에 최신 버전의 Arduino IDE가 설치되어 있는지 확인하세요
 
 ### Arduino IDE에 ESP32 을 설치
 
