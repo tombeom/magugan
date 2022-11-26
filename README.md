@@ -125,6 +125,8 @@ Our project is about image processing for a parking lot system which keeps count
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+https://user-images.githubusercontent.com/68363309/204097866-7f94b096-bf3e-4cca-ac07-b87363a63cd7.mp4
+
 ## Getting Started
 
 <!-- ############################################################# Preperation ################################################################## -->
